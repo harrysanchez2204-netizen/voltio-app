@@ -63,14 +63,28 @@ app/src/main/java/edu/utp/evchargemanager/
 
 Desde la terminal (Windows): `gradlew.bat assembleDebug` y `gradlew.bat testDebugUnitTest`.
 
+## Capturas de pantalla
+
+| Inicio | Estaciones | Búsqueda y filtro |
+|:---:|:---:|:---:|
+| ![Inicio](docs/screenshots/01-inicio.png) | ![Estaciones](docs/screenshots/02-estaciones.png) | ![Búsqueda y filtro](docs/screenshots/03-busqueda-y-filtro.png) |
+
+| Detalle de estación | Planificador de carga | Favoritas |
+|:---:|:---:|:---:|
+| ![Detalle](docs/screenshots/04-detalle-estacion.png) | ![Planificador](docs/screenshots/05-planificador.png) | ![Favoritas](docs/screenshots/06-favoritas.png) |
+
+| Modo oscuro |
+|:---:|
+| ![Modo oscuro](docs/screenshots/07-modo-oscuro.png) |
+
 ## Estado de verificación
 
 | Elemento | Estado |
 |---|---|
 | Lógica (modelos, filtros, cálculo, formatos) — 12 pruebas unitarias | **Compilada y ejecutada: 12/12 correctas** (con Kotlin 2.0.21 fuera de Gradle). |
-| Interfaz Compose y navegación | **Escrita, pero sin compilar ni ejecutar todavía** (el entorno donde se generó no tenía el SDK de Android). Falta compilar en Android Studio y corregir lo que aparezca. |
+| Interfaz Compose y navegación | **Compilada y ejecutada** en Android Studio con el emulador (ver capturas). |
 | Ejecución en emulador o dispositivo | Verificada manualmente en el emulador de Android Studio (compila y todas las funciones responden). |
-| Capturas de pantalla (requisito del PDF) | **Pendiente:** guardarlas en `docs/screenshots/` y enlazarlas aquí. |
+| Capturas de pantalla (requisito del PDF) | Incluidas en la sección «Capturas de pantalla». |
 | Video demostrativo de 3 a 5 minutos | **Pendiente.** |
 
 ## Limitaciones conocidas
@@ -78,4 +92,4 @@ Desde la terminal (Windows): `gradlew.bat assembleDebug` y `gradlew.bat testDebu
 - Datos ficticios y fijos; no hay edición, alta ni baja de estaciones (no es requisito del primer corte).
 - Los favoritos se conservan al rotar la pantalla pero no al cerrar la app (no hay persistencia).
 - La estimación de tiempo usa un rendimiento fijo de 90 % y potencia constante; es orientativa.
-- Las imágenes de las estaciones son ilustraciones propias (PNG en `res/drawable`), no fotos reales; no hay fuentes personalizadas (el logo se dibuja con `Canvas` y se usa la tipografía del sistema).
+- Las imágenes de las estaciones son imágenes de ejemplo generadas con IA (en `res/drawable`) y no corresponden a lugares reales; no hay fuentes personalizadas (el logo se dibuja con `Canvas` y se usa la tipografía del sistema).
