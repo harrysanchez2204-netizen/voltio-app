@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores usados por el ícono de la app. La paleta de la interfaz está en ui/theme/Color.kt -->
+    <color name="ev_green">#FF00704A</color>
+    <color name="ev_amber">#FFFFB300</color>
+</resources>
